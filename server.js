@@ -85,17 +85,12 @@ var server = http.createServer(function(request, response) {
 
 });
 
-// 初始化聊天的状态
-var io;
-var guestNumber = 1;
-var nickNames = {};
-var namesUsed = {};
-var currentRoom = {};
-
-
 
 // 添加一个监听
 chatServer.listen(server);
+
+// var test_name = "abc";
+// chatServer.test();
 
 // 开启监听
 server.listen(3000, function(){
