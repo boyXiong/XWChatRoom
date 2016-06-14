@@ -1,7 +1,7 @@
 body{
   padding: 50px;
   font: 14px "lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: rgb(30,33,39);
+  /*background-color: rgb(30,33,39);*/
 }
 
 a {
@@ -18,11 +18,37 @@ a {
   margin-bottom: 1em;
 }
 
-#message{
+#messages{
   width: 50%;
   height: 300px;
   overflow: auto; /* 让显示的消息区域在内容填满后可以向下滚动 */
   background-color: #eee;
   margin-bottom: 1em;
   margin-right: 10px;
+}
+
+#room-list{
+    float:right;
+    width:100px;
+    height:300px;
+    overflow:auto;
+}
+
+#room-list div{
+  border-bottom: 1px solid #eee;
+}
+
+/*悬浮的时候的样式*/
+#room-list div:hover{
+  background-color: #ddd;
+}
+
+#send-message{
+  width: 700px;
+  margin-bottom: 1em;
+  margin-right: 1em;
+}
+
+#help{
+  font:10px "Lucida Grande", Helvetica, Arial, sans-serif;
 }

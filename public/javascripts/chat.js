@@ -2,7 +2,7 @@
 
 var Chat = function(socket){
   this.socket = socket;
-}
+};
 
 
 // 发送消息处理函数
@@ -51,4 +51,4 @@ Chat.prototype.procesCommand = function(command) {
       break;
   }
   return message;
-}
+};
